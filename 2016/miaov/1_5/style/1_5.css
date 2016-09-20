@@ -1,0 +1,219 @@
+body, ul, li, div, p, h1{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+	background: url(../img/background.png) repeat-x white;
+}
+
+#Top{
+	width:960px;
+	height: 30px;
+	background-color: black;
+	margin:0 auto;
+}
+
+.Top_menu{
+	height: 30px;
+	float: left;
+}
+
+.Top_menu li{
+	height: 30px;
+	float: left;
+	line-height: 30px;
+	background: url(../img/top-background.png) no-repeat right 14px;
+	padding-right: 18px;
+	padding-left: 15px;
+}
+
+.Top_menu .No_dot{
+	background-image: none;
+}
+
+.Top_menu a{
+	font-size: 10px;
+	color: #c0c0c0;
+}
+
+.Top_bar{
+	height: 30px;
+	float: right;
+	overflow: hidden;
+	position: relative;
+}
+
+.Top_menu a:hover{
+	text-decoration: underline;
+	color: white;
+}
+
+.Top_bar a{
+	font-size: 10px;
+	color: #c0c0c0;
+}
+
+.Top_bar li{
+	height: 30px;
+	float: right;
+	line-height: 30px;
+}
+
+.Top_bar .Phone{
+	background: url(../img/top-background.png) no-repeat left -18px;
+	padding-left: 30px;
+	padding-right: 34px;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.Top_bar .Phone a, .Top_bar .Help a{
+	font-family: Arial;
+}
+
+.Top_bar .Help{
+	background: url(../img/top-background.png) no-repeat left -46px;
+	padding-left: 35px;
+	padding-right: 63px;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.Top_bar a{
+	color: white;
+	font-family: "微软雅黑";
+}
+
+.Top_bar .Canadaflag img{
+	position: absolute;
+	right: 34px;
+	top: 10px;
+}
+
+.Top_bar .Help a:hover{
+	text-decoration: underline;
+}
+
+/*	以上为Top部分	*/
+
+#Header{
+	width: 960px;
+	height: 100px;
+	margin: 0 auto;
+	position: relative;
+	background: url(../img/light.png) no-repeat;
+}
+
+.Header_Shoppingcart{
+	background: url(../img/shoppingcart.png) no-repeat left 7px;
+	height: 100px;
+}
+
+.Header_Shoppingcart p{
+	margin-left: 83px;
+	padding-top: 30px;
+	font-size: 20px;
+	font-family: Arial;
+	color: #fff;
+}
+
+.Header_Shoppingcart a{
+	background: url(../img/shoppingcart.png) no-repeat 0 -100px;
+	display: block;
+	width: 114px;
+	height: 23px;
+	position: absolute;
+	left: 103px;
+	bottom: 13px;
+	font-size: 15px;
+	font-family: Arial;
+	font-weight: bold;
+	color: #ffc200;
+	text-align: center;
+	line-height: 23px;
+}
+
+.Header_Shoppingcart a:hover{
+	color: #ffde75;
+}
+
+#Header h1{
+	width: 219px;
+	height: 100px;
+	background: url(../img/subject.png) no-repeat;
+	position: absolute;
+	left: 367px;
+	top: 24px;
+}
+
+.Header_Search{
+	position: absolute;
+	right: 0;
+	top: 33px;
+	width: 292px;
+	height: 31px;
+	background: url(../img/search.png) no-repeat;
+}
+
+.Header_Search .Search_text{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: none;
+	border: none;
+	width: 250px;
+	height: 31px;
+	padding-left: 21px;
+	font-size: 13px;
+	font-family: Arial;
+	color: #666;
+	outline: none;
+}
+
+.Header_Search .Search_button{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: none;
+	border: none;
+	width: 42px;
+	height: 31px;
+}
+
+/*	以上部分是Header部分	*/
+
+#Nav{
+
+}
+
+#Nav li{
+
+}
+
+#Nav strong{
+	font-weight: none;
+}
+
+#Nav span{
+
+}
+
+#Nav a:hover{
+
+}
+
+#Nav a:hover strong{
+
+}
+
+#Nav a:hover span{
+
+}
+
+/*	以上为Nav部分	*/
