@@ -1,4 +1,4 @@
-body, ul, li, div, p, h1{
+body, ul, li, div, p, h1, h2{
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
@@ -11,6 +11,7 @@ a{
 body{
 	background: url(../img/background.png) repeat-x white;
 }
+/*	上述内容为reset all样式    */
 
 #Top{
 	width:960px;
@@ -99,8 +100,7 @@ body{
 .Top_bar .Help a:hover{
 	text-decoration: underline;
 }
-
-/*	以上为Top部分	*/
+/*	以上为Top样式	*/
 
 #Header{
 	width: 960px;
@@ -184,36 +184,172 @@ body{
 	border: none;
 	width: 42px;
 	height: 31px;
+	outline: none;
 }
 
-/*	以上部分是Header部分	*/
+.Header_Search .Search_button:hover{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background:url(../img/search.png) no-repeat -250px -31px;
+	border: none;
+	width: 42px;
+	height: 31px;
+	outline: none;
+}
+
+.Header_Search .Search_button:active{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: none;
+	border: none;
+	width: 42px;
+	height: 31px;
+	outline: none;
+}
+
+/*	以上是Header样式	*/
 
 #Nav{
-
+	width: 960px;
+	height: 44px;
+	position: relative;
+	margin: 0 auto;
 }
 
 #Nav li{
+	float: left;
+	height: 30px;
+	position: absolute;
+	top: 8px;
+}
 
+#Nav a{
+	float: left;
+	height: 30px;
+	font-size: 15px;
+	font-family: Arial;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	margin-left: 8px;
 }
 
 #Nav strong{
-	font-weight: none;
+	font-weight: normal;
+	float: left;
+	height: 30px;
 }
 
 #Nav span{
-
+	float: left;
+	height: 30px;
+	padding: 0 16px;
 }
 
-#Nav a:hover{
-
+#Nav a:hover, #Nav .Nav_now{
+	background: url(../img/naviationbackground.png) repeat-x 0 -60px;
 }
 
-#Nav a:hover strong{
-
+#Nav a:hover strong, #Nav .Nav_now strong{
+	background: url(../img/naviationbackground.png) no-repeat right -30px;
 }
 
-#Nav a:hover span{
+#Nav a:hover span, #Nav .Nav_now span{
+	background: url(../img/naviationbackground.png) no-repeat left 0;
+}
+/*	以上为Naviation样式	*/
 
+#Content{
+	position: relative;
+	width: 1000px;
+	margin: 24px auto 0;
+	background: url(../img/contentbackground.png) repeat-y -1000px;
 }
 
-/*	以上为Nav部分	*/
+#Content .Content_top{
+	width: 1000px;
+	background: url(../img/contentbackground.png) no-repeat;
+}
+
+#Content .Content_bottom{
+	width: 1000px;
+	background: url(../img/contentbackground.png) no-repeat -2000px bottom;
+}
+
+#Content .Content_bottom ul{
+	position: absolute;
+	width: 960px;
+	left: 20px;
+}
+
+#Content .Content_banner_bottom{
+	width: 940px;
+	height: 52px;
+	background: url(../img/bannerbottom.png) no-repeat;
+	/*opacity: 0.5;
+		建议用设计师做的图，如果使用不透明度，需要调整父元素标签位置，使其跟不需要透明度的子元素标签同级
+	*/
+
+	/*-webkit-filter: alpha(opacity= 50);
+	-o-filter: alpha(opacity= 50);
+	filter: alpha(opacity= 50);
+	兼容IE5 IE6
+	*/
+	position: absolute;
+	top: 248px;
+	left: 30px;
+}
+
+#Content .Content_bottom a{
+	display: block;
+}
+
+#Content .Content_banner_bottom .Content_banner_title{
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 52px;
+	font-family: Arial;
+	color: #ffc600;
+	position: absolute;
+	top: 2px;
+	left: 34px;
+}
+
+#Content .Content_banner_text{
+	font-size: 13px;
+	color: #ffcccc;
+	font-family: Arial;
+	line-height: 17px;
+	width: 630px;
+	position: absolute;
+	top: 13px;
+	right: 13px;
+}
+
+#Content .Content_banner_bottom .Content_banner_title:hover{
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 52px;
+	font-family: Arial;
+	color: #fff000;
+	position: absolute;
+	top: 2px;
+	left: 34px;
+	text-decoration: underline;
+}
+
+#Content .Content_banner_bottom .Content_banner_text:hover{
+	font-size: 13px;
+	color: #fff;
+	font-family: Arial;
+	line-height: 17px;
+	width: 630px;
+	position: absolute;
+	top: 13px;
+	right: 13px;
+	text-decoration: underline;
+}
+	/*	以上内容是Content_banner样式		*/
+
