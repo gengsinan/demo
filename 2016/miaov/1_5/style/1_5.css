@@ -208,7 +208,6 @@ body{
 	height: 31px;
 	outline: none;
 }
-
 /*	以上是Header样式	*/
 
 #Nav{
@@ -278,7 +277,7 @@ body{
 	background: url(../img/contentbackground.png) no-repeat -2000px bottom;
 }
 
-#Content .Content_bottom ul{
+#Content .Content_bottom >ul{
 	position: absolute;
 	width: 960px;
 	left: 20px;
@@ -298,7 +297,7 @@ body{
 	兼容IE5 IE6
 	*/
 	position: absolute;
-	top: 248px;
+	top: 258px;
 	left: 30px;
 }
 
@@ -353,3 +352,49 @@ body{
 }
 	/*	以上内容是Content_banner样式		*/
 
+#Content .Content_bottom_content{
+	width: 942px;
+	height: 949px;
+	position: relative;
+	top: 341px;
+	left: 29px;
+}
+
+#Content .Content_bottom_content:after{
+	/*content: "";
+	display: block;
+	clear: both;*/
+}
+
+#Content .Content_bottom_content_leftside{
+	width: 209px;
+	height: 949px;
+}
+
+#Content .Content_bottom_content_leftside_naviationtitle{
+	width: 209px;
+	height: 29px;
+	background: url(../img/sidemenutitle.png) repeat-x 0 -58px;
+}
+
+#Content .Content_bottom_content_leftside_naviationtitle li{
+	width: 209px;
+	height: 29px;
+	background: url(../img/sidemenutitle.png) no-repeat;
+}
+
+#Content .Content_bottom_content_leftside_naviationtitle span{
+	display:block;
+	width: 209px;
+	height: 29px;
+	background: url(../img/sidemenutitle.png) no-repeat right;
+	font-size: 15px;
+	font-family: Arial;
+	font-weight: bold;
+	text-align: center;
+	line-height: 29px;
+}
+
+#Content .Content_bottom_content_leftside_naviationtitle a{
+	color: #fff;
+}
