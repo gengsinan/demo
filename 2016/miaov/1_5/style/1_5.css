@@ -1,4 +1,4 @@
-body, ul, li, div, p, h1, h2{
+body, ul, li, div, p, h1, h2, input{
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
@@ -264,7 +264,7 @@ body{
 	position: relative;
 	width: 1000px;
 	margin: 24px auto 0;
-	background: url(../img/contentbackground.png) repeat-y -1000px;
+	background: url(../img/contentbackground.png) repeat-y -1001px;
 }
 
 #Content .Content_top{
@@ -274,7 +274,7 @@ body{
 
 #Content .Content_bottom{
 	width: 1000px;
-	background: url(../img/contentbackground.png) no-repeat -2000px bottom;
+	background: url(../img/contentbackground.png) no-repeat -2002px bottom;
 }
 
 #Content .Content_bottom >ul{
@@ -374,20 +374,21 @@ body{
 #Content .Content_bottom_content_leftside_naviationtitle{
 	width: 209px;
 	height: 29px;
-	background: url(../img/sidemenutitle.png) repeat-x 0 -58px;
+	margin-bottom: 1px;
+	background: url(../img/leftsidetitle.png) repeat-x 0 -30px;
 }
 
 #Content .Content_bottom_content_leftside_naviationtitle li{
 	width: 209px;
 	height: 29px;
-	background: url(../img/sidemenutitle.png) no-repeat;
+	background: url(../img/leftsidetitle.png) no-repeat;
 }
 
 #Content .Content_bottom_content_leftside_naviationtitle span{
-	display:block;
+	display: block;
 	width: 209px;
 	height: 29px;
-	background: url(../img/sidemenutitle.png) no-repeat right;
+	background: url(../img/leftsidetitle.png) no-repeat right -60px;
 	font-size: 15px;
 	font-family: Arial;
 	font-weight: bold;
@@ -398,3 +399,73 @@ body{
 #Content .Content_bottom_content_leftside_naviationtitle a{
 	color: #fff;
 }
+
+#Content .Content_bottom_content_leftside_naviationlist{
+	background: url(../img/leftsidelist.png) repeat-y;
+}
+
+#Content .Content_bottom_content_leftside_naviationlist li{
+	height: 27px;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 27px;
+	text-align: center;
+	margin: 0 8px;
+}
+
+#Content .Content_bottom_content_leftside_naviationlist a{
+	display: block;
+	height: 27px;
+	color: #434343;
+	border-bottom: 1px solid #fff;
+}
+
+#Content .Content_bottom_content_leftside_naviationlist_bottom{
+	background: url(../img/leftsidelist.png) no-repeat -209px bottom;
+}
+
+#Content .Content_bottom_content_leftside_naviationlist .Content_bottom_content_leftside_naviationlist_top{
+	padding-top: 18px;
+}
+
+#Content .Content_bottom_content_leftside_naviationlist .Content_bottom_content_leftside_naviationlist_bottom{
+	padding-bottom: 15px;
+	height: 5px;
+	margin: 0;
+}
+
+#Content .Content_bottom_content_leftside_naviationlist .Content_bottom_content_leftside_naviationlist_now a{
+	color: #b20e00;
+}
+
+#Content .Content_bottom_content_leftside_naviationlist a:hover{
+	color: #b20e00;
+	border-bottom: 1px solid #b20e00;
+
+}
+	/*	以上是Content_leftside_naviation布局		*/
+#Content .Content_bottom_content_leftside_search{
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
