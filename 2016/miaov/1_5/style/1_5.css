@@ -7,11 +7,18 @@ body, ul, li, div, p, h1, h2, h3,input, form, dl, dt, dd, span{
 
 a{
 	text-decoration: none;
+	outline: none;
+	cursor: pointer;
 }
 
 img{
 	border: none;
 }
+
+form, input{
+	outline: none;
+}
+
 
 body{
 	background: url(../img/background.png) repeat-x white;
@@ -39,6 +46,7 @@ body{
 .Top_menu li{
 	height: 30px;
 	float: left;
+	font-family: Arial;
 	line-height: 30px;
 	background: url(../img/top-background.png) no-repeat right 14px;
 	padding-right: 18px;
@@ -105,6 +113,12 @@ body{
 .Top_bar .Canadaflag img{
 	position: absolute;
 	right: 34px;
+	top: 10px;
+}
+
+.Top_bar .Americaflag img{
+	position: absolute;	
+	right: 0;
 	top: 10px;
 }
 
@@ -184,7 +198,7 @@ body{
 	font-size: 13px;
 	font-family: Arial;
 	color: #666;
-	outline: none;
+	line-height: 31px;
 }
 
 .Header_Search .Search_button{
@@ -195,7 +209,6 @@ body{
 	border: none;
 	width: 42px;
 	height: 31px;
-	outline: none;
 }
 
 .Header_Search .Search_button:hover{
@@ -447,6 +460,7 @@ body{
 
 #Content .Content_bottom_content_leftside_naviationlist a:hover{
 	color: #b20e00;
+	background: #fbd866;
 	border-bottom: 1px solid #b20e00;
 
 }
@@ -608,7 +622,10 @@ body{
 	height: 19px;
 	position: absolute;
 	background: url(../img/shoppingcart.png) no-repeat 0 -381px;
-	z-index: ;
+}
+
+#Content .Content_bottom_rightside_sort a:hover{
+	background: url(../img/shoppingcart.png) no-repeat -19px -381px;	
 }
 
 #Content .Content_bottom_rightside_sort ul{
@@ -941,3 +958,134 @@ body{
  }
 			/*		以上内容为Content_rightside_scroll布局		*/
 
+#Footer{
+	height: 61px;
+	background: #160200;
+	margin-top: 9px;
+}
+
+#Footer .Footer_center{
+	margin: 0 auto;
+	width: 960px;
+}
+
+#Footer .Footer_center_first{
+	float: left;
+	background: url(../img/shoppingcart.png) no-repeat 0 -455px;
+	height: 55px;
+	width: 328px;
+	margin-top: 6px;
+	margin-left: 12px;
+	margin-right: 14px;
+}
+
+#Footer .Footer_center_second{
+	float: left;
+	background: url(../img/shoppingcart.png) no-repeat 0 -514px;
+	height: 36px;
+	width: 268px;
+	margin-top: 13px;
+	margin-left: 12px;
+	margin-right: 14px;
+}
+
+#Footer li{
+	font-size: 14px;
+	font-family: Arial;
+	font-weight: bold;
+	color: #fff;
+	text-align: right;
+	line-height: 40px;
+}
+
+#Footer .Footer_center_first_li{
+	line-height: 50px;
+}
+
+
+#Footer .Footer_center form{
+	float: right;
+	left: 669px;
+	width: 292px;
+	height: 31px;
+	margin-top: 15px;
+	background: url(../img/search.png);
+}
+
+
+#Footer .Footer_center .Footer_center_text{
+	width: 250px;
+	height: 31px;
+	border: 0;
+	background: none;
+	padding-left: 21px;
+	color: #666;
+	line-height: 31px;
+}
+
+#Footer .Footer_center .Footer_center_submit{
+	float: right;
+	width: 42px;
+	height: 31px;
+	background: none;
+	border: 0;
+}
+
+#Footer .Footer_center .Footer_center_submit:hover{
+	background: url(../img/search.png) -250px -31px;
+}
+
+#Footer .Footer_center .Footer_center_submit:active{
+	background: url(../img/search.png) -250px 0;
+}
+
+/*		以上内容为Footer样式		*/
+
+#Bottom{
+	border-top: 1px solid #e23a39;
+	background: #a71704;
+}
+
+#Bottom ul{
+	width: 960px;
+	height: 242px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#Bottom li{
+	float:left;
+	width: 158px;
+	padding-right: 12px;
+	padding-left: 22px;
+	padding-bottom: 34px;
+}
+
+#Bottom p{
+	font-size: 15px;
+	font-family: Arial;
+	font-weight: bold;
+	color: #fff;
+	line-height: 20px;
+	padding-top: 32px;
+	padding-bottom: 22px;
+}
+
+#Bottom a{
+	display: block;
+	line-height: 16px;
+	font-size: 13px;
+	font-family: Arial;
+	color: #b47269;
+}
+
+#Bottom a:hover, #Bottom a:hover span{
+	color: #fff;
+}
+
+#Bottom span{
+	color: #fdcc03;
+}
+/*	以上内容为Bottom样式		*/
+
+/*					全剧终					*/
