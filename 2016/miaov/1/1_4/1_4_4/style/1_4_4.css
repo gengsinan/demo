@@ -1,0 +1,94 @@
+.weather{
+	width: 819px;
+	height: 233px;
+	background-color: #ebeff7;
+}
+
+th. td, tr{
+	padding: 0;
+}
+
+table{
+	border-collapse: collapse;
+	border-color: #aabde3;
+}
+
+th{
+	background: #dbe3fa;
+}
+
+.yesterday, .blue{
+	background-color: #f4f7fc;
+}
+
+.yesterday, .thisday{
+	width: 115px;
+	height: 69px;
+}
+
+.sun, .moon, .cloud{
+	width: 76px;
+}
+
+.text{
+	width: 139px;
+}
+
+.blue{
+	width: 91px;
+}
+
+.thisday{
+	color: #d22727;
+	background-color: #f4f7fc;
+}
+
+.hightemperature{
+	color: #e8581a;
+}
+
+.lowtemperature{
+	color: #23237a;
+}
+
+.day{
+	width: 208px;
+	height: 36px;
+}
+
+.effect{
+	width: 208px;
+	height: 36px;
+}
+
+.temperature, .hightemperature, .lowtemperature{
+	width: 114px;
+}
+
+.direction, .direction{
+	width: 114px;
+}
+
+.windy, .windy{
+	width: 114px;
+}
+
+.day22{
+	height: 106px;
+	border: 2px solid #acbfe1;
+	position: relative;
+	left: 16px;
+	top: 25px;
+	background-color: white;
+	text-align: center;
+}
+
+.day23{
+	height: 69px;
+	border: 2px solid #acbfe1;
+	position: relative;
+	left: 16px;
+	bottom: -29px;
+	background-color: white;
+	text-align: center;
+}
