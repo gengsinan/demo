@@ -19,21 +19,6 @@ a:hover{
 	color: #ADA7A7;
 }
 /*	上述为全局样式reset  */
-
-body{
-	/*background: #808080;*/
-	/*	JS中设置弹出的背景色	*/
-}
-
-#seted{
-	width: 100px;
-	height: 100px;
-	border: 4px solid #000;
-	position: absolute;
-	left: 15px;
-	top: 90px;
-}
-
 h1, #click{
 	float: left;
 }
@@ -51,6 +36,27 @@ h1{
 	font-size: 14px;
 	line-height: 40px;
 	margin-top: 25px;
+}
+
+#seted{
+	width: 100px;
+	height: 100px;
+	border: 4px solid #000;
+	position: absolute;
+	left: 15px;
+	top: 90px;
+}
+
+#screen_bg{
+	width:100%;
+	height:100%;
+	background:#000;
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	display: none;
 }
 
 #set{

@@ -1,7 +1,7 @@
 window.onload = function ()
 {
 	var oclick = document.getElementById('click');
-	var all = document.getElementById('all');
+	var screen_bg = document.getElementById('screen_bg');
 	var set = document.getElementById('set');
 	var seted = document.getElementById('seted');
 	var red = document.getElementById('color_red');
@@ -22,7 +22,7 @@ window.onload = function ()
 
 	click.onclick = function () 
 	{
-		all.style.background = '#808080';
+		screen_bg.style.display = 'block';
 		set.style.display = 'block';
 	}
 
@@ -80,7 +80,7 @@ window.onload = function ()
 
 	function shut()
 	{
-		all.style.background = 'white';
+		screen_bg.style.display = 'none';
 		set.style.display = 'none';
 	};
 
