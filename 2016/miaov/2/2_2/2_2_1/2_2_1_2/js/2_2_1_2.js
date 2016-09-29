@@ -10,7 +10,7 @@ window.onload = function ()
 	var oDescription = document.getElementById('description');
 
 	var arrimg = [ 'img/1.jpg','img/2.jpg','img/3.jpg','img/4.jpg' ];
-	var arrdes = [ 'First','Second','Third','fouth' ];
+	var arrdes = [ 'First','Second','Third','Fouth' ];
 	var quantity = 0;
 
 	oContinual.onclick = continually;
@@ -95,7 +95,7 @@ window.onload = function ()
 	var oDescription = document.getElementById('description');
 
 	var arrimg = ['img/1.jpg','img/2.jpg','img/3.jpg','img/4.jpg'];
-	var arrdes = ['First','Second','Third','fouth'];
+	var arrdes = ['First','Second','Third','Fouth'];
 	var quantity = 0;
 	var oTurn = true;
 
