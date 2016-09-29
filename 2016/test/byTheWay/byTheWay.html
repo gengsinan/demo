@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>byTheWay</title>
+		<link rel="stylesheet" href="style/byTheWay.css" />
+	</head>
+	<body>
+
+		<ul>
+			<li id="caonima" class="lis">
+				<a id="link" href="">微博</a>
+				<ul id="open">
+					<li><a href="">私信</a></li>
+					<li><a href="">评论</a></li>
+					<li><a href="">@我</a></li>
+				</ul>
+			</li>
+		</ul>
+
+		<script>
+			document.getElementById('caonima').onmouseover = show;
+			document.getElementById('caonima').onmouseout = shut;
+
+			function show(){
+				document.getElementById('open').style.display = 'block';
+				document.getElementById('link').style.background = '#FFEF4E';
+			}
+
+			function shut(){
+				document.getElementById('open').style.display = 'none';
+				document.getElementById('link').style.background = '#f1f1f1';
+			}
+
+		</script>
+	</body>
+</html>

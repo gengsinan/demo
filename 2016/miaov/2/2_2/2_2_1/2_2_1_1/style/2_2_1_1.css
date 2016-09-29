@@ -1,0 +1,99 @@
+p{
+	margin: 2px;
+	padding: 4px;
+	line-height: 23px;
+	font-size: 16px;
+}
+
+#phone{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 289px;
+	height: 594px;
+	background: url(../img/phone.gif)
+}
+
+#screen{
+	width: 237px;
+	height: 370px;
+	position: absolute;
+	top: 87px;
+	left: 26px;
+	overflow: auto;
+}
+
+#code{
+	width: 237px;
+	border-top: 1px solid #bdcec6;
+	background: #f7f7f7;
+	position: relative;
+	top: 457px;
+	left: 26px;
+}
+
+#emoji, #text_1{
+	position: absolute;
+	top: 5px;
+}
+
+#emoji{
+	top: 12px;
+	left: 8px;
+	cursor: pointer;
+}
+
+#text_1{
+	width: 139px;
+	height: 34px;
+	left: 41px;
+}
+
+#text_1, #btn_1{
+	outline: none;
+	font-size: 18px;
+}
+
+#btn_1{
+	width: 52px;
+	height: 36px;
+	color: #8c8494;
+	position: absolute;
+	left: 184px;
+	top: 6px;
+}
+
+.left, .left img, .left p{
+	float: left;
+}
+
+.left{
+	width: 100%;
+}
+
+.left img{
+	margin: 6px auto auto 5px;
+}
+
+.left p{
+	background: #CBC5C5;
+}
+
+.right, .right img, .right p{
+	float: right;
+}
+
+.right{
+	width: 100%;
+}
+
+.right img{
+	margin: 6px auto auto 5px;
+}
+
+.right p{
+	background: #02EA2C;
+}
