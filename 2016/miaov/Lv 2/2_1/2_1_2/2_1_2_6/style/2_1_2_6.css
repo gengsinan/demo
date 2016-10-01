@@ -1,0 +1,53 @@
+ul, li{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+div{
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	width: 530px;
+	height: 240px;
+	border: 2px solid #B0B0B0;
+	background: url(../img/background.gif);
+}
+ul{
+	width: 580px;
+	position: absolute;
+	top: 35px;
+	left: 29px;
+	z-index: 1;
+}
+
+li{
+	position: relative;
+	width: 56px;
+	height: 90px;
+	margin-right: 29px;
+	float: left;
+	z-index: 1;
+}
+
+a{
+	width: 56px;
+	height: 90px;
+	margin-right: 29px;
+	float: left;
+	z-index: 1;
+	display: none;
+}
+
+img{
+	position: absolute;
+	z-index: 2;
+	top: -180px;
+	left: 46px;
+	border: none;
+}
+
+/*用这个也可以
+li:hover a{	
+	display: block;
+}*/
