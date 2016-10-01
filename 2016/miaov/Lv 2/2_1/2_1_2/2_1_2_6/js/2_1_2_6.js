@@ -16,7 +16,7 @@ window.onload = function ()
 	{
 		aLi[i].onmouseover = function () 
 		{
-			aA[i].style.display = 'block';
+			this.getElementsByTagName('a')[0].style.display = 'block';
 		}
 
 		aLi[i].onmouseout = function () 
