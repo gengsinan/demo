@@ -1,0 +1,19 @@
+span{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 510px;
+	height: 600px;
+	background: url(../img/keyboard.jpg);
+}
+
+div{
+	width: 49px;
+	height: 58px;
+	border: 1px solid #DBDBDB;
+	float: left;
+	background: #DBDBDB;
+}
