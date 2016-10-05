@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+#whole{
+	margin:auto;
+	width: 200px;
+	border: 1px solid black;
+}
+
+.lis{
+	width: 200px;
+}
+
+.lis h2, .lis ul{
+	text-indent: 20px;
+}
+
+.lis ul{
+	display: none;
+}
+
+h2{
+	background: url(../img/ico1.gif) no-repeat 6px center #5FF7CA;
+}
+
+.lis li{
+	border-bottom: 1px solid black;
+}
+
+.active{
+	background: url(../img/ico2.gif) no-repeat 6px center #FBF065;
+}
+
+.lis .hover{
+	background: #FF67D6;
+}

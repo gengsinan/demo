@@ -1,0 +1,71 @@
+img{
+	border: none;
+	cursor: pointer;
+}
+
+span{
+	display: block;
+}
+
+div{
+	width: 873px;
+	height: 551px;
+	background: url(../img/background.jpg);
+	position: relative;
+	margin: 0 auto;
+}
+
+#left_img, #right_img, #previous, #next, #left_page, #right_page{
+	position: absolute;
+	top: 50px;
+	left: 30px;
+
+}
+
+#left_img, #right_img{
+	top: 108px;
+	background: url(../img/loader_ico.gif) no-repeat center;		/*初始化背景*/
+}
+
+#left_img{
+	width: 450px;
+	height: 280px;
+	left: 50px;
+}
+
+#right_img{
+	width: 250px;
+	height: 280px;
+	left: 560px;
+}
+
+#previous, #next{
+	width: 80px;
+	height: 20px;
+	border: 1px solid #807F7F;
+	text-align: center;
+	line-height: 20px;
+	background: #F3F3F3;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#previous:hover, #next:hover{
+	background: #FFFFFF;
+}
+
+#next{
+	left: 130px;
+}
+
+#left_page, #right_page{
+	top: 390px;
+}
+
+#left_page{
+	left: 50px;
+}
+
+#right_page{
+	left: 546px;
+}
