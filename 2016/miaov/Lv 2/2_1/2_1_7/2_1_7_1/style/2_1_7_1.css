@@ -1,0 +1,218 @@
+*{
+	font-size:14px;
+}
+
+ol, ul, li, p, input, h2, strong, section, textarea{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+p{
+	display: inline-block;
+}
+
+h2{
+	font-size: 15px;
+}
+
+input, textarea{
+	outline: none;
+}
+
+a, img{
+	cursor: pointer;
+	text-decoration: none;
+}
+
+span{
+	color: #ff6600;
+}
+
+body{
+	background: #DFDFDF;
+}
+
+.after{
+	display: block;
+	content: "";
+	clear: both;
+}
+
+#evaluation{
+	width: 950px;
+	height: 500px;
+	margin: 0 auto;
+	background: white;
+	box-shadow: 0 0 20px;
+	border: 2px solid #ddd;
+}
+
+.eva_1{
+	height: 24px;
+	position: relative;
+	background: #f0f5f8;
+	border-bottom: 2px solid white;
+	border-top: 2px solid white;
+}
+
+h2{
+	padding-left: 10px;
+}
+
+.eva_1 li{
+	position: absolute;
+	top: 0;
+	left: 830px;
+}
+
+.eva_2{
+	height: 30px;
+	background: #f3f8fe;
+	line-height: 30px;
+	border-top: 1px solid #c4d5df;
+}
+
+.eva_2 p:first-child{
+	padding-left: 18px;
+}
+
+.eva_2 p:nth-child(2){
+	padding-left: 410px;
+}
+
+.eva_3{
+	height: 240px;
+	position: relative;
+	border-bottom: 1px dashed #dedede;
+	margin-left: 20px;
+	margin-right: 40px;
+	margin-bottom: 10px;
+}
+
+.eva_3 >li:first-child{
+	padding-top: 10px;
+	color: blue;
+	width: 430px;
+	margin: 0;
+	float: left;
+}
+
+.eva_3 >li:first-child img{
+	margin-right: 16px;
+}
+
+.eva_3 >li:first-child a{
+	display: inline-block;
+	width: 280px;
+}
+
+.eva_3 >li:first-child a:hover{
+	text-decoration: underline;
+	color: #ff6600;
+}
+
+.eva_3 >li:nth-child(2){
+	float: right;
+	width: 450px;
+}
+
+.eva_3 ol li:first-child a{
+	display: inline-block;
+	width: 19px;
+	height: 18px;
+	background: url(../img/all.png);
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.eva_3 div{										/*第三层弹出框隐藏*/
+	width: 200px;
+	height: 62px;
+	padding-top: 7px;
+	padding-left: 6px;
+	background: url(../img/over.jpg);
+	position: absolute;
+	left: 346px;
+	top: 30px;
+	display: none;
+}
+
+.eva_3 div:nth-child(2){
+	left: 369px;
+}
+
+.eva_3 div:nth-child(3){
+	left: 392px;
+}
+
+.eva_3 div:nth-child(4){
+	left: 415px;
+}
+
+.eva_3 div:nth-child(5){
+	left: 438px;
+}
+
+.eva_3 div span{
+	color: #ff4400;	
+}
+
+.eva_3 ol strong{
+	position: absolute;
+	left: 396px;
+	top: 20px;
+	font-weight: normal;
+}
+
+.eva_3 ul{
+	border: 1px solid gray;
+	width: 450px;
+	height: 170px;
+}
+
+.eva_3 ul textarea{
+	width: 438px;
+	height: 130px;
+	resize: none;
+	margin-left: 6px;
+	margin-top: 10px;
+	border: none;
+}
+
+.eva_3 ul p{
+	display: block;
+	text-indent: 1em;
+}
+
+section{
+	padding-top: 4px;
+}
+
+section button{
+	width: 70px;
+	height: 18px;
+	line-height: 14px;
+	font-size: 12px;
+}
+
+section select{
+	width: 76px;
+	height: 22px;
+	line-height: 22px;
+	float: right;
+	font-size: 12px;	
+}
+
+.eva_4{
+	height: 28px;
+	background: #f3f8fe;
+}
+
+.eva_4 h2{
+	line-height: 28px;
+}
+
+.eva_5{
+	
+}
