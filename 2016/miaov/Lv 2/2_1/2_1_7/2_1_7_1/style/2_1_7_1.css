@@ -23,6 +23,7 @@ input, textarea{
 a, img{
 	cursor: pointer;
 	text-decoration: none;
+	display: inline-block;
 }
 
 span{
@@ -183,6 +184,8 @@ h2{
 .eva_3 ul p{
 	display: block;
 	text-indent: 1em;
+	position: absolute;
+	top: 186px;
 }
 
 section{
@@ -214,5 +217,81 @@ section select{
 }
 
 .eva_5{
-	
+	width: 950px;
+	height: 320px;
+	position: relative;
 }
+
+.ol2{
+	position: relative;
+}
+
+.ol2 a, .ol3 a{
+	width: 19px;
+	height: 18px;
+	background: url(../img/all.png);
+}
+
+.ol2 div, .ol3 div{
+	width: 206px;
+	height: 69px;
+	padding-top: 14px;
+	padding-left: 6px;
+	background: url(../img/over.jpg) no-repeat;
+	position: absolute;
+	left: 28px;
+	display: none;
+}
+
+.ol2 div:nth-child(2), .ol3 div:nth-child(2){
+	left: 51px;
+}
+
+.ol2 div:nth-child(3), .ol3 div:nth-child(3){
+	left: 73px;
+}
+
+.ol2 div:nth-child(4), .ol3 div:nth-child(4){
+	left: 96px;
+}
+
+.ol2 div:nth-child(5), .ol3 div:nth-child(5){
+	left: 118px;
+}
+
+.ol2 >li:nth-child(3), .ol3 >li:nth-child(3){
+	position: absolute;
+	top: 6px;
+	left: 220px;
+}
+
+.ol3 >li:nth-child(3){
+	top: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
