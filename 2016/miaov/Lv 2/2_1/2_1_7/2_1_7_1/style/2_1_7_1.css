@@ -222,7 +222,7 @@ section select{
 	position: relative;
 }
 
-.ol2{
+.ol2, .ol3{
 	position: relative;
 }
 
@@ -243,7 +243,12 @@ section select{
 	display: none;
 }
 
-.ol2 div:nth-child(2), .ol3 div:nth-child(2){
+.ol3 div{
+	position: absolute;
+	left: -6px;
+}
+
+.ol2 div:nth-child(2), {
 	left: 51px;
 }
 
@@ -263,6 +268,22 @@ section select{
 	position: absolute;
 	top: 6px;
 	left: 220px;
+}
+
+.ol3 div:nth-child(2){
+	left: 16px;
+}
+
+.ol3 div:nth-child(3){
+	left: 40px;
+}
+
+.ol3 div:nth-child(4){
+	left: 61px;
+}
+
+.ol3 div:nth-child(5){
+	left: 84px;
 }
 
 .ol3 >li:nth-child(3){
