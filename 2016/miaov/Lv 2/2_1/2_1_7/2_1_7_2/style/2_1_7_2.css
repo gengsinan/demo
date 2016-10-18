@@ -1,0 +1,60 @@
+ul, li, p{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+body{
+	background: #DEDEDE;
+} 
+
+p{
+	display: inline-block;
+}
+
+ul{
+	position: relative;
+}
+
+input{
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+button{
+	margin-left: 10px;
+}
+
+p{
+	position: absolute;
+	left: 190px;
+}
+
+#sing{
+	width: 300px;
+	height: 200px;
+	margin: 0 auto;
+	border: 2px solid #FFFFFF;
+	border-radius: 10px;
+}
+
+#sing li{
+	height: 26px;
+	line-height: 26px;
+	border-top: 1px solid white;
+	background: white;
+}
+
+#sing div{
+	height: 38px;
+	line-height: 38px;
+	background: #E8CCFF;
+	border-radius: 10px;
+}
+
+.option{				/*隐藏功能区按钮，JS中调用*/
+	color: #838383;
+	background: none;
+	border: none;
+	outline: none;
+}

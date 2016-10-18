@@ -8,22 +8,21 @@ ol, ul, li, p, input, h2, strong, section, textarea{
 	list-style-type: none;
 }
 
-p{
+p, a, img, .eva_3 >li:first-child a, .eva_3 ol li:first-child a{
 	display: inline-block;
-}
-
-h2{
-	font-size: 15px;
 }
 
 input, textarea{
 	outline: none;
 }
 
+strong{
+	font-weight: normal;
+}
+
 a, img{
 	cursor: pointer;
 	text-decoration: none;
-	display: inline-block;
 }
 
 span{
@@ -40,6 +39,18 @@ body{
 	clear: both;
 }
 
+.eva_1 li, .eva_3 div, .eva_3 ol strong, .eva_3 ul p, .ol2 li:nth-child(3), .ol3 li:nth-child(3), .ol2 div, .ol3 div, .eva_5 img, .eva_5 input{
+	position: absolute;
+}
+
+.eva_1, .eva_3, .eva_5, .ol2, .ol3{
+	position: relative;
+}
+
+.eva_1 li, .ol2 li:nth-child(3), .ol3 li:nth-child(3){
+	top: 0;
+}
+
 #evaluation{
 	width: 950px;
 	height: 500px;
@@ -51,7 +62,6 @@ body{
 
 .eva_1{
 	height: 24px;
-	position: relative;
 	background: #f0f5f8;
 	border-bottom: 2px solid white;
 	border-top: 2px solid white;
@@ -62,8 +72,6 @@ h2{
 }
 
 .eva_1 li{
-	position: absolute;
-	top: 0;
 	left: 830px;
 }
 
@@ -84,7 +92,6 @@ h2{
 
 .eva_3{
 	height: 240px;
-	position: relative;
 	border-bottom: 1px dashed #dedede;
 	margin-left: 20px;
 	margin-right: 40px;
@@ -104,7 +111,6 @@ h2{
 }
 
 .eva_3 >li:first-child a{
-	display: inline-block;
 	width: 280px;
 }
 
@@ -119,7 +125,6 @@ h2{
 }
 
 .eva_3 ol li:first-child a{
-	display: inline-block;
 	width: 19px;
 	height: 18px;
 	background: url(../img/all.png);
@@ -127,16 +132,14 @@ h2{
 	margin-bottom: 10px;
 }
 
-.eva_3 div{										/*第三层弹出框隐藏*/
+.eva_3 div{	
 	width: 200px;
 	height: 62px;
 	padding-top: 7px;
 	padding-left: 6px;
 	background: url(../img/over.jpg);
-	position: absolute;
 	left: 346px;
 	top: 30px;
-	display: none;
 }
 
 .eva_3 div:nth-child(2){
@@ -160,7 +163,6 @@ h2{
 }
 
 .eva_3 ol strong{
-	position: absolute;
 	left: 396px;
 	top: 20px;
 	font-weight: normal;
@@ -184,7 +186,6 @@ h2{
 .eva_3 ul p{
 	display: block;
 	text-indent: 1em;
-	position: absolute;
 	top: 186px;
 }
 
@@ -219,11 +220,8 @@ section select{
 .eva_5{
 	width: 950px;
 	height: 320px;
-	position: relative;
-}
-
-.ol2, .ol3{
-	position: relative;
+	padding-top: 20px;
+	padding-left: 10px;
 }
 
 .ol2 a, .ol3 a{
@@ -232,87 +230,60 @@ section select{
 	background: url(../img/all.png);
 }
 
-.ol2 div, .ol3 div{
+.ol2 li:nth-child(3), .ol3 li:nth-child(3){
+	left: 230px;
+}
+
+.ol3 li:nth-child(1){
+	margin-top: 4px;
+}
+
+.ol2 div, .ol3 div{				
 	width: 206px;
 	height: 69px;
-	padding-top: 14px;
-	padding-left: 6px;
 	background: url(../img/over.jpg) no-repeat;
-	position: absolute;
-	left: 28px;
-	display: none;
-}
-
-.ol3 div{
-	position: absolute;
+	padding-top: 8px;
+	padding-left: 4px;
+	top: 20px;
 	left: -6px;
+	z-index: 2;
 }
 
-.ol2 div:nth-child(2), {
-	left: 51px;
+.ol2 div:nth-child(2), .ol3 div:nth-child(2){
+	left: 17px;
 }
 
 .ol2 div:nth-child(3), .ol3 div:nth-child(3){
-	left: 73px;
-}
-
-.ol2 div:nth-child(4), .ol3 div:nth-child(4){
-	left: 96px;
-}
-
-.ol2 div:nth-child(5), .ol3 div:nth-child(5){
-	left: 118px;
-}
-
-.ol2 >li:nth-child(3), .ol3 >li:nth-child(3){
-	position: absolute;
-	top: 6px;
-	left: 220px;
-}
-
-.ol3 div:nth-child(2){
-	left: 16px;
-}
-
-.ol3 div:nth-child(3){
 	left: 40px;
 }
 
-.ol3 div:nth-child(4){
-	left: 61px;
+.ol2 div:nth-child(4), .ol3 div:nth-child(4){
+	left: 64px;
 }
 
-.ol3 div:nth-child(5){
-	left: 84px;
+.ol2 div:nth-child(5), .ol3 div:nth-child(5){
+	left: 88px;
 }
 
-.ol3 >li:nth-child(3){
-	top: 16px;
+.eva_5 img{
+	top: 20px;
+	left: 400px;
 }
 
+.eva_5 input{
+	width: 130px;
+	height: 36px;
+	background: #3498db;
+	top: 120px;
+	left: 410px;
+	border-radius: 6px;
+	color: white;
+}
 
+.eva_5 input:hover{
+	background: #79B6F6;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ol >li:nth-child(3), ol div, .hidden{
+	display: none;
+}
