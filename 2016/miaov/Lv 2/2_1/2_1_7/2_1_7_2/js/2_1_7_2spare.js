@@ -8,9 +8,8 @@ window.onload = function ()
 	var oInput = oDiv.getElementsByTagName('input')[0];
 	var aBtn = oDiv.getElementsByTagName('button');
 	var own = null;				//声明一个可以记录颜色变化的值
-	var oTurn = null;			//声明一个储存歌曲层input选中个数(状态)的数值
 
-	//歌曲层
+	//歌曲选择部分
 	function fn1 () 
 	{
 		for ( var i=0; i<aLi.length; i++ ) 
@@ -44,13 +43,8 @@ window.onload = function ()
 					}
 				}
 
-				oTurn = 0;
-				for ( var i=0; i<aInput.length; i++ ) 		//歌曲层全部选中时,全选按钮变为选中;歌曲层至少有一首未被选中,则全选按钮变为未选中状态;
-				{
-					oTurn += Number(aInput[i].checked);
-				}
-				
-				if ( oTurn == aInput.length ) 
+				//如果所有歌曲都被选中，全选按钮变为选中状态;如果有一首歌曲没被选中，全选按钮变为未选状态;
+				if ( aInput[0].checked == true && aInput[1].checked == true && aInput[2].checked == true && aInput[3].checked == true && aInput[4].checked == true && aInput[5].checked == true  ) 
 				{
 					oInput.checked = true;
 				} else 
@@ -58,7 +52,8 @@ window.onload = function ()
 					oInput.checked = false;
 				}
 
-				if ( oTurn )			//至少有一个歌曲按钮被选中时，则功能键显示;反之，则功能键隐藏;
+				//至少有一个歌曲按钮被选中时，则功能键显示;反之，则功能键隐藏;
+				if ( aInput[0].checked == true || aInput[1].checked == true || aInput[2].checked == true || aInput[3].checked == true || aInput[4].checked == true || aInput[5].checked == true ) 
 				{
 					fn2 ('');
 				} else 
@@ -86,9 +81,10 @@ window.onload = function ()
 	//功能层
 	oInput.onclick = function ()	//全选按钮点击事件
 	{
-		if ( this.checked ) 
+		//如果歌曲层至少有一首没被选中，则点击全选按钮歌曲全部被选中，并且歌曲层背景变换;反之，点击全选按钮歌曲全部被取消，并且初始化歌曲层函数;
+		if ( aInput[0].checked == false || aInput[1].checked == false || aInput[2].checked == false || aInput[3].checked == false || aInput[4].checked == false || aInput[5].checked == false ) 
 		{
-			for (  var i=0; i<aInput.length; i++ )		//如果歌曲层至少有一首没被选中，则点击全选按钮歌曲全部被选中，并且歌曲层背景变换;反之，点击全选按钮歌曲全部被取消，并且初始化歌曲层函数;
+			for (  var i=0; i<aInput.length; i++ ) 
 			{
 				aInput[i].checked = true;
 				aLi[i].style.background = '#DFDFDF';
