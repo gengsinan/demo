@@ -36,6 +36,7 @@ p{
 	margin: 0 auto;
 	border: 2px solid #FFFFFF;
 	border-radius: 10px;
+	overflow: hidden;
 }
 
 #sing li{
@@ -49,7 +50,6 @@ p{
 	height: 38px;
 	line-height: 38px;
 	background: #E8CCFF;
-	border-radius: 10px;
 }
 
 .option{				/*隐藏功能区按钮，JS中调用*/
