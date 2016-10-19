@@ -15,13 +15,7 @@ window.onload = function ()
 	{
 		for ( var i=0; i<aLi.length; i++ ) 
 		{
-			if ( i%2 == 0 ) 		//每隔一行不同颜色
-			{
-				aLi[i].style.background = '#E3EEF6';
-			} else 
-			{
-				aLi[i].style.background = '';
-			}
+			aLi[i].style.background = i%2 == 0 ? '#E3EEF6' : '';		//每隔一行不同颜色
 
 			aLi[i].onmouseover = function () 	//滑过事件
 			{
@@ -32,16 +26,9 @@ window.onload = function ()
 			aInput[i].index = i;
 			aInput[i].onclick = function () 	//点击(选中/取消)歌曲事件
 			{
-				for ( var i=0; i<aInput.length; i++ ) 
+				for ( var i=0; i<aInput.length; i++ )		//用own记录onmouseout时的正确颜色值;
 				{	
-					if ( aInput[this.index].checked == true ) 
-					{	
-						aLi[this.index].style.background = '#DFDFDF';
-						own = aLi[this.index].style.background;
-					} else
-					{
-						own = this.index%2 == 0 ? '#E3EEF6' : 'white';
-					}
+					own = aInput[this.index].checked == true ? aLi[this.index].style.background : this.index%2 == 0 ? '#E3EEF6' : 'white';
 				}
 
 				oTurn = 0;
@@ -49,22 +36,10 @@ window.onload = function ()
 				{
 					oTurn += Number(aInput[i].checked);
 				}
-				
-				if ( oTurn == aInput.length ) 
-				{
-					oInput.checked = true;
-				} else 
-				{
-					oInput.checked = false;
-				}
 
-				if ( oTurn )			//至少有一个歌曲按钮被选中时，则功能键显示;反之，则功能键隐藏;
-				{
-					fn2 ('');
-				} else 
-				{
-					fn2 ('option');
-				}
+				oInput.checked = oTurn == aInput.length ? true : false;		//歌曲全被选中,全选按钮checked为true;反之,全选按钮checked为false;
+
+				oTurn ? fn2 ('') : fn2 ('option');		//至少有一个歌曲按钮被选中时，则功能键显示;反之，则功能键隐藏;
 			}
 
 			aLi[i].onmouseout = function () 		//滑出事件
@@ -86,9 +61,9 @@ window.onload = function ()
 	//功能层
 	oInput.onclick = function ()	//全选按钮点击事件
 	{
-		if ( this.checked ) 
+		if ( this.checked )			//如果歌曲层至少有一首没被选中，则点击全选按钮歌曲全部被选中，并且歌曲层背景变换;反之，点击全选按钮歌曲全部被取消，并且初始化歌曲层函数;
 		{
-			for (  var i=0; i<aInput.length; i++ )		//如果歌曲层至少有一首没被选中，则点击全选按钮歌曲全部被选中，并且歌曲层背景变换;反之，点击全选按钮歌曲全部被取消，并且初始化歌曲层函数;
+			for (  var i=0; i<aInput.length; i++ )		
 			{
 				aInput[i].checked = true;
 				aLi[i].style.background = '#DFDFDF';
