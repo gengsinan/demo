@@ -1,0 +1,122 @@
+ul, ol, li{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+strong, a{
+	font-weight: normal;
+	display: block;
+	text-decoration: none;
+}
+
+a, span{
+	cursor: pointer;
+}
+
+body{
+	font-size: 14px;
+	color: white;
+	background-color: #DADADA;
+}
+
+#nav{
+	width: 520px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#header, #header strong, #header ul{
+	height: 36px;
+}
+
+#header{
+	background: url(../img/spirit.png) 0 -36px;
+}
+
+#header strong{
+	background: url(../img/spirit.png) no-repeat left 0;
+}
+
+#header ul{
+	background: url(../img/spirit.png) no-repeat right -72px;
+}
+
+#header li, #header a, #header span{
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	float: left;
+}
+
+#header a, #header span{
+	width: 68px;
+	margin-left: 10px;
+	margin-right: 16px;
+	border-radius: 6px;
+}
+
+#header li, #header span{
+	border-left: 1px solid #ced6e7;
+	border-right: 1px solid #10426b;
+	margin: 6px 0 6px 1px;
+}
+
+#header span{
+	border: none;
+	margin-left: 60px;
+}
+
+#nav div:nth-child(2){
+
+}
+
+#nav div li, #nav div a{
+	float: left;
+}
+
+#header a:hover{
+	background: #84a5c6;
+}
+
+.navMiddle, .navLeft, ol{
+	height: 27px;
+	display: inline-block;
+}
+
+.navMiddle{
+	background: url(../img/spirit.png) 0 -135px;
+	position: absolute;
+	top: 40px;
+	display: none;
+}
+
+#nav div:nth-child(3){
+	left: 80px;
+}
+
+#nav div:nth-child(4){
+	left: 150px;
+}
+
+#nav div:nth-child(5){
+	left: 180px;
+}
+
+.navLeft{
+	background: url(../img/spirit.png) no-repeat left -108px;
+}
+
+ol{
+	color: #215a9c;
+	background: url(../img/spirit.png) no-repeat right -162px;
+	font-size: 11px;
+}
+
+ol li{
+	padding: 5px 10px 5px 16px;
+}
+
+ ol a:hover{
+ 	text-decoration: underline;
+ }

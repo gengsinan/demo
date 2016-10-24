@@ -1,0 +1,50 @@
+header, ul, li{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+div, header, li, img{
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+body{
+	background: #EAEAEA;
+}
+
+div{
+	width: 500px;
+	height: 278px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	border: 2px solid #BAB6B6;
+}
+
+header{
+	width: 120px;
+	height: 50px;
+	background: #799CFF;
+	font-size: 30px;
+	line-height: 50px;
+	text-align: center;
+	border: 1px solid white;
+	float: left;
+}
+
+ul{
+	position: absolute;
+	top: 52px;
+	left: 400px;
+}
+
+li{
+	width: 100px;
+	height: 73px;
+	background: #FC974C;
+	border: 1px solid white;
+	font-size: 20px;
+	line-height: 74px;
+	text-align: center;
+}

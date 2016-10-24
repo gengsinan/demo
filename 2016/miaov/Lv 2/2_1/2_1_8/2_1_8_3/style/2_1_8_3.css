@@ -1,0 +1,43 @@
+ul, li{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+li, img{
+	cursor: pointer;
+}
+
+body{
+	background: #E8DFDF;
+}
+
+div, li, img{
+	border-radius: 10px;
+}
+
+div{
+	width: 470px;
+	height: 306px;
+	margin: 0 auto;
+	border: 2px solid #AAAAAA;
+	box-shadow: 0 0 30px;
+}
+
+li{
+	width: 80px;
+	height: 40px;
+	border: 1px solid #BB51FA;
+	margin-bottom: 2px;
+	background: #C978F9;
+	line-height: 40px;
+	text-align: center;
+}
+
+ul, img{
+	float: left;
+}
+
+li:hover{
+	background: #E7CCF7;
+}

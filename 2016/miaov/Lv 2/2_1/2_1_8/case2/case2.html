@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>miaov 2_1_8case1</title>
+	<link href="miaovlogo.ico" rel="shortcut icon" type="img/x-icon">
+	<script>
+		function sum () 
+		{
+			if ( arguments[arguments.length-1] == '+' ) 
+			{
+				var n = 0;
+				for ( var i=0; i<arguments.length-1; i++ ) 
+				{
+					n += arguments[i];
+				}
+			} else 
+			{
+				var n = arguments[0];
+				for ( var i=1; i<arguments.length-1; i++ ) 
+				{
+					n -= arguments[i];
+				}
+			}
+			return n;
+		};
+
+		// 课后小练习：
+		alert( sum( 1,2,3 , '+' ) );			// 6
+		alert( sum( 10,2,3,4, '-' ) );			// 1
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

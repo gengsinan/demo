@@ -1,0 +1,125 @@
+ul, ol, li, p, h2, content{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+a, li{
+	cursor: pointer;
+}
+
+body{
+	background: #CDCDCD;
+	font-size: 14px
+}
+
+div{
+	width: 300px;
+	height: 722px;
+	margin: 0 auto;
+	border: 2px solid #B8B7B7;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 0 30px;
+}
+
+ul:first-child{
+	height: 30px;
+	line-height: 10px;
+	background: #284167;
+	color: white;
+}
+
+ul:first-child li{
+	float: left;
+	padding: 10px;
+}
+
+ul:first-child li:nth-child(2){
+	margin-left: 140px;
+}
+
+#topOnmousedown, #bottomOnmousedown{
+	padding-top: 6px;
+	height: 24px;
+	background: #A18DDA;
+}
+
+#bottomOnmousedown{
+	padding-top: 10px;
+	width: 300px;
+	height: 20px;
+	position: absolute;
+	top: 704px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+#topOnmousedown li, #bottomOnmousedown li{
+	width: 0;
+	height: 0;
+	margin-left: 142px;
+	border-style: solid;
+	border-width: 0 16px 16px 16px;
+	border-color: transparent transparent #007bff transparent;
+}
+
+#topOnmousedown:hover li{
+	transition: 1s;
+	border-color: transparent transparent #A0CEFF transparent;
+	border-radius: 100%;
+}
+
+#bottomOnmousedown:hover li{
+	transition: 1s;
+	border-color: #A0CEFF transparent transparent transparent;
+	border-radius: 100%;
+}
+
+span{
+	display: block;
+	height: 1684px;
+	overflow: hidden;
+}
+
+ol{
+	height: 1684px;
+	position: relative;
+	/*top: -200px;	*/	/*用top值來空置onmousedonw配合定時器造成視覺滾動效果*/
+}
+
+ol li{
+	height: 200px;
+	position: relative;
+	border-bottom: 2px solid #FFFFFF;
+	margin: 10px;
+}
+
+ol h2, ol p{
+	padding-top: 20px;
+}
+
+ol p{
+	width: 100px;
+}
+
+ol img{
+	position: absolute;
+	top: 20px;
+	left: 120px;
+	border-radius: 10px;
+}
+
+#lastLi{
+	margin-bottom: 0;
+	border-bottom: none;
+}
+
+#bottomOnmousedown li{
+	border-width: 16px 16px 0 16px;
+	border-color:  #007bff transparent transparent transparent;
+}
+
+#topOnmousedown:hover, #bottomOnmousedown:hover{
+	background-color: #A168E2;
+}
