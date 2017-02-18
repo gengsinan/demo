@@ -8,7 +8,7 @@ $(function(){
 	//初始化
 	aLi[0].style.background = '#E7CCF7';
 
-	//side滑过模块
+	//sLide滑过模块
 	for ( var i=0; i<arrPic.length; i++ ) 
 	{
 		aLi[i].index = i;
